@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'technoir';
+  src: url('data/font/sonic_advance_2.eot');
+  src: url('data/font/sonic_advance_2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('data/font/sonic_advance_2.woff') format('woff'), /* Pretty Modern Browsers */
+      url('data/font/sonic_advance_2.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('data/font/sonic_advance_2.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body {
+    font-family: 'technoir';
+    background-color: #000;
+    color: #fff;
+
+    /* Allow mouse dragging. */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    /* disable touch panning/zooming */
+    -ms-touch-action: none;
+    touch-action: none;
+
+    /* Allow canvas to hit the edges of the browser viewport. */
+    margin: 0;
+}
+
+#screen canvas {
+    margin: auto;
+
+    /* Hide the gap for font descenders. */
+    display: block;
+
+    /* disable scaling interpolation */
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+#screen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#screen div {
+    position: absolute;
+    z-index: 2;
+}
+
+.login{
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 3px;
+  background-color: rgba(29, 29, 29, 0.9);
+}
+
+.login p{
+  font-size: 2rem;
+}
+
+.login input[type='text']{
+  font-size: 1rem;
+  margin: 5px;
+  font-family: 'technoir'
+}
+
+.login input[type='password']{
+  font-size: 1rem;
+  margin: 5px;
+  font-family: 'technoir'
+}
+
+.login input[type='button']{
+  font-size: 1rem;
+  margin: 5px;
+  font-family: 'technoir'
+}
